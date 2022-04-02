@@ -1,8 +1,9 @@
-<div class="container contact" id="career">
+<div class="container contact my-5" id="career">
 
     <div class="row mt-5">
+    <hr class="mt-5" style="height: 3px; color: yellow;">
 
-      <div class="col-lg-4" data-aos="fade-right">
+      <div class="col-lg-3 mt-5">
         <div class="info">
           <div class="address">
             <i class="bi bi-geo-alt"></i>
@@ -27,14 +28,16 @@
 
       </div>
 
-      <div class="col-lg-8 mt-5 mt-lg-0 mb-5 " data-aos="fade-left">
+      <div class="col-lg-8 mt-5 mt-lg-5 mb-5 text-center " >
         <p class="lead">Together, we work to transform the world’s leading businesses while sharing knowledge and pushing ourselves to do better. It’s how we shape great careers and give innovation that human touch the world needs.
 
         Get The Future You Want with us!</p>
 
-        <div class="btns">
-            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#career_apply">Open modal for @mdo</button>
+        <div class="btns mt-5">
+            <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#career_apply">Work with us</button>
         </div>
+
+        
       </div>
 
     </div>
@@ -43,7 +46,5 @@
 
   <?php include 'career.php';?>
 <!--================== insert in db ===================-->
-
-
   
   

@@ -1,33 +1,28 @@
-<section id="home" class="d-flex align-items-center">
-    <div class="container position-relative text-lg-start" data-aos="zoom-in" data-aos-delay="100">
+<section id="home" class="d-flex align-items-center" >
+    <div class=" container-fluid px-5 position-relative" data-aos="zoom-in" data-aos-delay="100">
       
-        <div class="row" style="position:relative;height:70vh">
+        <div class="row px-5 d-none d-xxl-block position-absolute end-50" >
           
-        
-          <div class="col-lg-7 mt-auto ">
-                <h1 class="d-none d-md-block" >Buy from someone who <span>cares.</span></h1>
-                <h2 class="d-block d-md-none" >Buy from someone who <span>cares.</span></h2>
-
-              <div class="btns">
-                <a href="" class="btn-menu animated fadeInUp scrollto" data-bs-toggle="modal" data-bs-target="#contact">Contact Us</a>
-              </div>
+          <div class="col-12 ">
+                <h1 style="font-size:60px; margin-top:300px">Buy from someone who <span>cares.</span></h1>
           </div>
           
-          <div style="position:absolute;right:0px;top:0" class="col-lg-5">
-
-            <!-- <div style="margin-top:-50px" > -->
-            <img src="assets/img/vv_logo.png" alt="Virgin Vogue"  height="300px">
-            <!-- </div> -->
+        </div>
+        <div class="row d-none d-sm-block d-xxl-none" >
+          
+          <div class="col-12 ">
+                <h1 style="font-size:50px; margin-top:300px">Buy from someone who <span>cares.</span></h1>
           </div>
-
+          
+        </div>
+        <div class="row d-block d-sm-none" >
+          
+          <div class="col-12 ">
+                <h1 style="font-size:30px; margin-top:100px">Buy from someone who <span>cares.</span></h1>
+          </div>
+          
         </div>
         
-
-
-        
-
-      </div>
     </div>
   </section>
 
-  <?php include 'contact.php';?>

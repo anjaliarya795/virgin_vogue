@@ -46,11 +46,22 @@
             'email' => $_POST['email'],
             'role' => $_POST['role'],
             'skills' => $_POST['skills'],
+
+
             
         ];
 
+        if(strlen($data['skills'])>1800){
+            $vogue->giveAlert('skills must be described in less than 200 words.');
+        }
+        else{
+            $vogue->insertData("applications",$data,"index");
+            $vogue->giveAlert('Message sent');
+
+        }
+
     
-       $vogue->insertData("applications",$data,"index");
+       
        
     }
     

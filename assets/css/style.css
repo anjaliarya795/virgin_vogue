@@ -1,435 +1,474 @@
 *{
-  margin:0;
-
-  padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-  background: #070000;
-  color: rgb(255, 255, 255);
-}
-
-a {
-  color: #cda45e;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #d9ba85;
-  text-decoration: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", serif;
-}
-
-
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
-.back-to-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 15px;
-  z-index: 996;
-  width: 44px;
-  height: 44px;
-  border-radius: 50px;
-  transition: all 0.4s;
-  border: 2px solid #cda45e;
-
-}
-.back-to-top i {
-  font-size: 28px;
-  color: #cda45e;
-  line-height: 0;
-}
-.back-to-top:hover {
-  background: #cda45e;
-  color: #1a1814;
-}
-.back-to-top:hover i {
-  color: #444444;
-}
-.back-to-top.active {
-  visibility: visible;
-  opacity: 1;
-}
-
-
------------------------------header---------------------------------*/
-#header {
-  background: rgba(12, 11, 9, 0.6);
-  border-bottom: 1px solid rgba(12, 11, 9, 0.6);
-  transition: all 0.5s;
-  z-index: 997;
-  padding: 15px 0;
-  top: 50px;
-  width:50%
-}
-#header.header-scrolled {
-  top: 0;
-  background: rgba(0, 0, 0, 0.85);
-  border-bottom: 1px solid #37332a;
-}
-
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
-/**
-* Desktop Navigation 
-*/
-.navbar {
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-.navbar ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  list-style: none;
-  align-items: center;
-}
-.navbar li {
-  position: relative;
-}
-.navbar a, .navbar a:focus {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 0 10px 30px;
-  color: #fff;
-  white-space: nowrap;
-  transition: 0.3s;
-  font-size: 14px;
-}
-.navbar a i, .navbar a:focus i {
-  font-size: 12px;
-  line-height: 0;
-  margin-left: 5px;
-}
-.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #d9ba85;
-}
-
-
-
-/*--------------------------------------------------------------
-# home Section
---------------------------------------------------------------*/
-#home {
-  width: 100%;
-  height: 100vh;
-  background: url("../img/landing_img.jpg") top center;
-  background-size: cover;
-  position: relative;
-  top:0;
-  padding: 0;
-}
-#home:before {
-  content: "";
-  background: rgba(22, 18, 18, 0.726);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-#home .container {
-  padding-top: 110px;
-}
-
-
-#home h1 {
-  margin: 0;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
-  color: #fff;
-  font-family:'Playfair Display', serif;;
-}
-#home h1 span {
-  color: rgb(243, 205, 34);
-}
-
-#home .btns {
-  margin-top: 40px;
-}
-#home .btn-menu, #home .btn-book {
-  font-weight: 600;
-  font-size: 20px;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  display: inline-block;
-  padding: 15px 35px;
-  border-radius: 25px;
-  transition: 0.3s;
-  line-height: 1;
-  color: rgb(255, 255, 255);
-  border: 4px solid rgb(243, 205, 34);
-}
-#home .btn-menu:hover, #home .btn-book:hover {
-  background: #cda45eb0;
-  color: #fff;
-}
-
-
-/*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
-section {
-  padding: 60px 0;
-  overflow: hidden;
-}
-
-.section-bg {
-  background-color: #1a1814;
-}
-
-.section-title {
-  padding-bottom: 40px;
-}
-.section-title h2 {
-  font-size: 14px;
-  font-weight: 500;
-  padding: 0;
-  line-height: 1px;
-  margin: 0 0 5px 0;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #aaaaaa;
-  font-family: "Poppins", sans-serif;
-}
-.section-title h2::after {
-  content: "";
-  width: 120px;
-  height: 1px;
-  display: inline-block;
-  background: rgba(255, 255, 255, 0.2);
-  margin: 4px 10px;
-}
-.section-title p {
-  margin: 0;
-  margin: 0;
-  font-size: 36px;
-  font-weight: 700;
-  font-family: "Playfair Display", serif;
-  color: #cda45e;
-}
-
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
-#about {
-  /* background-size: cover; */
-  position: relative;
-  padding: 80px 0;
-}
-#about:before {
-  content: "";
-  background: rgba(0, 0, 0, 0.993);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-#about .content h1, .products h1, .modal-title {
-  font-weight: 600;
-  font-size: 40px;
-  color: #ffffff;
-}
-#about .content{
-  line-height: 2;
-  /* padding: 50px; */
-  margin:0 auto 0;
-
-}
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
-
-
-
-
-
-/*--------------------------------------------------------------
-# Why Us id="p-model"
---------------------------------------------------------------*/
-.p-model .box {
-  padding: 50px 30px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  transition: all ease-in-out 0.3s;
-  background: #1a1814ca;
-}
-
-.p-model .row{
-  background: url("../img/production_model.jpg")  center ;
-  background-size: cover;
-  z-index: -1;
-}
-.p-model .box h6 {
-  font-size: 30px;
-  font-weight: 400;
-  padding: 0;
-  margin: 50px 15% 50px;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.p-model .box h1{
-  font-size: 40px;
-  /* padding: 0; */
-  margin: 50px 12% 50px;
-  color: rgba(218, 221, 51, 0.8);
-}
-
-.p-model .box:hover {
-  /* background: #cda45e; */
-  padding: 30px 30px 70px 30px;
-  box-shadow: 10px 15px 30px rgba(14, 11, 11, 0.192);
-}
-/*--------------------------------------------------------------
-# p-model ends
---------------------------------------------------------------*/
-
-
-
-
-
-
-/*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
-.contact .info {
-  width: 100%;
-}
-.contact .info i {
-  font-size: 20px;
-  float: left;
-  width: 44px;
-  height: 44px;
-  background: #cda45e;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
-}
-.contact .info h4 {
-  padding: 0 0 0 60px;
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 5px;
-  font-family: "Poppins", sans-serif;
-}
-.contact .info p {
-  padding: 0 0 0 60px;
-  margin-bottom: 0;
-  font-size: 14px;
-  color: #bab3a6;
-}
-.contact .info .open-hours, .contact .info .email, .contact .info .phone {
-  margin-top: 40px;
-}
-.contact .php-email-form {
-  width: 100%;
-}
-.contact .php-email-form .form-group {
-  padding-bottom: 8px;
-}
-.contact .php-email-form input, .contact .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-  background: #0c0b09;
-  border-color: #625b4b;
-  color: white;
-}
-.contact .php-email-form input {
-  height: 44px;
-}
-.contact .php-email-form textarea {
-  padding: 10px 12px;
-}
-.contact .php-email-form button[type=submit] {
-  background: #cda45e;
-  border: 0;
-  padding: 10px 35px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 50px;
-}
-.contact .php-email-form button[type=submit]:hover {
-  background: #d3af71;
-}
-
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
-.services .icon-box {
-  text-align: center;
-  padding: 50px 20px;
-  transition: all ease-in-out 0.3s;
-  box-shadow: 0px 2px 15px rgba(218, 209, 209, 0.295);
-}
-.services .icon-box .icon {
-  margin: 0 auto;
-  transition: all 0.3s ease-out 0s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  transform-style: preserve-3d;
-}
-.services .icon-box .icon i {
-  color: #fff;
-  font-size: 50px;
-}
-
-.services .icon-box h4 {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 24px;
-}
-.services .icon-box h4 a {
-  color: #191919;
-}
-.services .icon-box p {
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-.services .icon-box:hover {
-  border-color: #c9d651;
-  padding: 60px 20px ;
-}
-
-.services .icon-box:hover .icon i {
-  color:#f3cd22;
-}
-
-.services .icon-box:hover h4 a, .services .icon-box p {
-  font-size: 20px;
-  margin-top: 30px;
-  font-weight: 100;
-}
-
-/*-------------------------------------------------------------- */
-
-
-
-.modal-content{
-  background: url("../img/about_vv.jpg") top center;
-  background-size: cover;
-}
-
-
+    margin:0;
+    padding: 0;
+  }
+  
+  html body {
+    max-width:100vw;
+    height:100%;
+    margin:0px;
+    padding:0px;
+  }
+  
+  body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #070000;
+    color: rgb(255, 255, 255);
+  }
+  
+  a {
+    color: #cda45e;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #d9ba85;
+    text-decoration: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", serif;
+  }
+  
+  
+  /*--------------------------------------------------------------
+  # Back to top button
+  --------------------------------------------------------------*/
+  .back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    transition: all 0.4s;
+    border: 2px solid #cda45e;
+  
+  }
+  .back-to-top i {
+    font-size: 28px;
+    color: #cda45e;
+    line-height: 0;
+  }
+  .back-to-top:hover {
+    background: #cda45e;
+    color: #1a1814;
+  }
+  .back-to-top:hover i {
+    color: #444444;
+  }
+  .back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /*
+  -----------------------------header---------------------------------*/
+  
+  #header {
+    background: rgba(12, 11, 9, 0.6);
+    border-bottom: 1px solid rgba(12, 11, 9, 0.6);
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 15px 0;
+    top: 40px;
+  }
+  #header.header-scrolled {
+    top: 0;
+    background: rgb(0, 0, 0, 0.85);
+    padding: 10px 0;
+    border-bottom: 1px solid #37332a;
+  }
+  
+  /*--------------------------------------------------------------
+  # Navigation Menu
+  --------------------------------------------------------------*/
+  /**
+  * Desktop Navigation 
+  */
+  .navbar {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  .navbar li {
+    position: relative;
+  }
+  .navbar a, .navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 30px;
+    color: #fff;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 14px;
+  }
+  .navbar a i, .navbar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+  }
+  .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+    color: #d9ba85;
+  }
+  
+  
+  
+  /*--------------------------------------------------------------
+  # home Section
+  --------------------------------------------------------------*/
+  #home {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/landing_img.jpg") top center;
+    background-size: cover;
+    position: relative;
+    top:0;
+    padding: 0;
+  }
+  #home:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  #home .container {
+    padding-top: 110px;
+  }
+  
+  #home h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+    font-family:'Playfair Display', serif;;
+  }
+  #home h1 span {
+    color: rgb(243, 205, 34);
+  }
+  
+  #home .btns {
+    margin-top: 40px;
+  }
+  #home .btn-menu, #home .btn-book {
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 15px 35px;
+    border-radius: 25px;
+    transition: 0.3s;
+    line-height: 1;
+    color: rgb(255, 255, 255);
+    border: 4px solid rgb(243, 205, 34);
+  }
+  #home .btn-menu:hover, #home .btn-book:hover {
+    background: #cda45eb0;
+    color: #fff;
+  }
+  
+  
+  /*--------------------------------------------------------------
+  # Sections General
+  --------------------------------------------------------------*/
+  section {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+  
+  .section-bg {
+    background-color: #1a1814;
+  }
+  
+  .section-title {
+    padding-bottom: 40px;
+  }
+  .section-title h2 {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    font-family: "Poppins", sans-serif;
+  }
+  .section-title h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 4px 10px;
+  }
+  .section-title p {
+    margin: 0;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+    color: #cda45e;
+  }
+  
+  /*--------------------------------------------------------------
+  # About
+  --------------------------------------------------------------*/
+  #about {
+    /* background-size: cover; */
+    position: relative;
+    padding: 30px 0;
+  }
+  #about:before {
+    /* content: "" */
+    background: rgba(0, 0, 0, 0.993);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  #about .content h1, .products h1, .modal-title {
+    font-weight: 600;
+    font-size: 40px;
+    color: #ffffff;
+  }
+  #about .content{
+    line-height: 2;
+    /* padding: 50px; */
+    margin:0 auto 0;
+  
+  }
+  /*--------------------------------------------------------------
+  # About
+  --------------------------------------------------------------*/
+  
+  .pro-img img{
+    object-fit: contain;
+  }
+  
+  .pro-img {
+    height:40vh !important; 
+    width:55vw !important;
+  } 
+  
+  .whatwedo-img {
+     height:40vh !important; 
+     /* width: 55vw !important; */
+  }
+  
+  .whatwedo-img img{
+    object-fit: contain;
+  }
+  
+  #products .carousel-indicators button{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin-top: 100px;
+    position: relative;
+    top:60px;
+  
+  }
+  #wwd .carousel-indicators button{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    /* margin-top: 100px; */
+    position: relative;
+    top:50px;
+    bottom: 30px ;
+  
+  }
+  
+  .products{
+    margin: auto auto;
+  }
+  
+  /*--------------------------------------------------------------
+  # Why Us id="p-model"
+  --------------------------------------------------------------*/
+  .p-model .box {
+    padding: 50px 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all ease-in-out 0.3s;
+    background: #1a1814ca;
+  }
+  
+  .p-model .row{
+    background: url("../img/production_model.jpg")  center ;
+    background-size: cover;
+    z-index: -1;
+  }
+  .p-model .box h6 {
+    font-size: 30px;
+    font-weight: 400;
+    padding: 0;
+    margin: 50px 15% 50px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .p-model .box h1{
+    font-size: 40px;
+    /* padding: 0; */
+    margin: 50px 12% 50px;
+    color: rgba(218, 221, 51, 0.8);
+  }
+  
+  .p-model .box:hover {
+    /* background: #cda45e; */
+    padding: 30px 30px 70px 30px;
+    box-shadow: 10px 15px 30px rgba(14, 11, 11, 0.192);
+  }
+  /*--------------------------------------------------------------
+  # p-model ends
+  --------------------------------------------------------------*/
+  
+  
+  
+  /*--------------------------------------------------------------
+  # Contact
+  --------------------------------------------------------------*/
+  .contact .info {
+    width: 100%;
+  }
+  .contact .info i {
+    font-size: 20px;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #cda45e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+  .contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-family: "Poppins", sans-serif;
+  }
+  .contact .info p {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #bab3a6;
+  }
+  
+  .contact .info .open-hours, .contact .info .email, .contact .info .phone {
+    margin-top: 40px;
+  }
+  .contact .php-email-form {
+    width: 100%;
+  }
+  .contact .php-email-form .form-group {
+    padding-bottom: 8px;
+  }
+  .contact .php-email-form input, .contact .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    background: #0c0b09;
+    border-color: #625b4b;
+    color: white;
+  }
+  .contact .php-email-form input {
+    height: 44px;
+  }
+  .contact .php-email-form textarea {
+    padding: 10px 12px;
+  }
+  .contact .php-email-form button[type=submit] {
+    background: #cda45e;
+    border: 0;
+    padding: 10px 35px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+  }
+  .contact .php-email-form button[type=submit]:hover {
+    background: #d3af71;
+  }
+  
+  /*--------------------------------------------------------------
+  # Services
+  --------------------------------------------------------------*/
+  .services .icon-box {
+    text-align: center;
+    padding: 50px 20px;
+    transition: all ease-in-out 0.3s;
+    box-shadow: 0px 2px 15px rgba(218, 209, 209, 0.295);
+  }
+  .services .icon-box .icon {
+    margin: 0 auto;
+    transition: all 0.3s ease-out 0s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transform-style: preserve-3d;
+  }
+  .services .icon-box .icon i {
+    color: #fff;
+    font-size: 50px;
+  }
+  
+  .services .icon-box h4 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+  .services .icon-box h4 a {
+    color: #191919;
+  }
+  .services .icon-box p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .services .icon-box:hover {
+    border-color: #c9d651;
+    padding: 60px 20px ;
+  }
+  
+  .services .icon-box:hover .icon i {
+    color:#f3cd22;
+  }
+  
+  .services .icon-box:hover h4 a, .services .icon-box p {
+    font-size: 20px;
+    margin-top: 30px;
+    font-weight: 100;
+  }
+  
+  /*-------------------------------------------------------------- */
+  
+  
+  
+  .modal-content{
+    background: url("../img/about_vv.jpg") top center;
+    background-size: cover;
+  }
+  
+  
+  

@@ -11,20 +11,32 @@
   <meta content="" name="keywords">
 
   <!--  bootstrap CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
   
   <!-- aos CSS Files -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  
+  <link href="assets/aos/aos.css" rel="stylesheet">  
+
+
+  <link href="assets/glightbox/css/glightbox.min.css" rel="stylesheet">  
+
+
+  <!-- <link href="assets/swiper-bundle/swiper-bundle.min.css" rel="stylesheet">   -->
+
+
+
   
   <!--bootstrap icons link-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
   
   <!-- box icon -->
-  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link href='assets/boxicons/css/boxicons.min.css' rel='stylesheet'>
+
   
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -46,26 +58,25 @@
   <!-- End home -->
 
 
+  
 
+  <!-- ======= About Section ======= -->
 
-<!-- ======= About Section ======= -->
+  <section id="about" class="about">
+        <div class="container " >
 
-    <section id="about" class="about">
-      <div class="container " >
+        <?php include 'assets/include/about.php';?>
 
-      <?php include 'assets/include/about.php';?>
+  <!-- what we do carousel -->
+          
+        <?php include 'assets/include/what_we_do.php';?>
 
-<!-- what we do carousel -->
-        
-      <?php include 'assets/include/what_we_do.php';?>
+  <!--end carousel-->
+          
 
-<!--end carousel-->
-        
-
-      </div>
-    </section>
-<!-- End About Section -->
-
+        </div>
+      </section>
+  <!-- End About Section -->
 
 
 
@@ -75,12 +86,27 @@
 
   <!-- End Services Section -->
 
-
+    
+  
     <!-- ======= Our production Model ======= -->
 
     <?php include 'assets/include/p_model.php';?>
 
     <!-- End  -->
+
+  <!-- products section -->
+
+
+  <?php include 'assets/include/products.php';?>
+
+  <!--end product section-->
+
+
+
+
+
+
+  
 
 
     
@@ -94,12 +120,6 @@
     <!-- End  -->
 
 
-  <!-- products section -->
-
-
-  <?php include 'assets/include/products.php';?>
-
-  <!--end product section-->
 
 
   
@@ -113,17 +133,17 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- JS Files -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+  <script src="assets/aos/aos.js"></script>
+  <script src="assets/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/swiper-bundle/swiper-bundle.min.js"></script>
 
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
+
 <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </html>

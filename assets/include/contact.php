@@ -45,8 +45,15 @@
             'message' => $_POST['message'],
         ];
 
+        if(strlen($data['message'])>2000){
+          $vogue->giveAlert('message should not be longer than 250 words.');
+      }
+      else{
+        $vogue->insertData("contact",$data,"index");
+        $vogue->giveAlert('Message sent');
+      }
+
     
-       $vogue->insertData("contact",$data,"index");
 
 
     }

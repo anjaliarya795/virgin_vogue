@@ -9,9 +9,9 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="messages.php">Messages</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="" data-bs-toggle="modal" data-bs-target="#add_product">Add product</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link active" href="applications.php">Applications</a>
             </li>
@@ -25,4 +25,4 @@
     </nav>
 
 
-    <?php include 'add_product.php' ;?>
+    <?php //include 'add_product.php' ;?>
