@@ -1,5 +1,5 @@
 <section id="home" class="d-flex align-items-center" >
-    <div class=" container-fluid px-5 position-relative" data-aos="zoom-in" >
+    <div class=" container-fluid px-5 position-relative"  >
       
         <div class="row px-5 d-none d-xxl-block position-absolute end-50" >
           

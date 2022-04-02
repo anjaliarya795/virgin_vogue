@@ -1,7 +1,7 @@
   <section class="container">
         <div class="row">
           <div class="col-lg-12  mb-5">
-            <div class="card bg-dark text-warning text-center fst-italic shadow-lg" data-aos="fade-down">
+            <div class="card bg-dark text-warning text-center fst-italic shadow-lg">
               <p class="mx-auto my-2">Virgin Vogue is a Noida (Near Delhi) based manufacturing unit, established in 2018 with a vision to deliver fashion along with quality to the world.</p>
             </div>
           </div>
@@ -26,13 +26,13 @@
       </div>
         
         <div class="row mt-5 pt-5" >
-          <div class="col-lg-3 col-sm-11" data-aos="fade-right">
+          <div class="col-lg-3 col-sm-11" >
             <img src="assets/img/about_vv/about3.jpg" alt="" class="w-100">
           </div>
-          <div class="col-lg-6 col-sm-11 my-4" data-aos="fade-up">
+          <div class="col-lg-6 col-sm-11 my-4" >
             <img src="assets/img/about_vv/about2.jpg" alt="" class="w-100">
           </div>
-          <div class="col-lg-3 col-sm-11" data-aos="fade-left">
+          <div class="col-lg-3 col-sm-11" >
             <img src="assets/img/about_vv/about4.jpg" alt="" class="w-100">
           </div>
         </div>
