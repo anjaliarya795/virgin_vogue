@@ -1,4 +1,4 @@
-        <div class="row mb-5" id="about" data-aos="fade-right">
+        <div class="row mb-5" id="about">
           <div class="col-lg-8  pt-4 pt-lg-0 order-2 order-lg-1 text-center content ">
             <h1>Who are we</h1>
 

@@ -1,5 +1,5 @@
     <section id="p-model" class="p-model">
-      <div data-aos="fade-up">
+      <div>
   
         <div class="row">
   
