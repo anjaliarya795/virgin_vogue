@@ -15,13 +15,13 @@
           <div class="email">
             <i class="bi bi-envelope"></i>
             <h4>Email:</h4>
-            <p>Virginvogue@gmail.com</p>
+            <p>Contact@virginvogue.in</p>
           </div>
 
           <div class="phone">
             <i class="bi bi-phone"></i>
             <h4>Call:</h4>
-            <p>9015355590</p>
+            <p>+919015355590</p>
           </div>
 
         </div>
